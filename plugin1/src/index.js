@@ -1,1 +1,1 @@
-module.exports = () => console.log("Wowzers");
+module.exports.sample = () => console.log("Wowzers");

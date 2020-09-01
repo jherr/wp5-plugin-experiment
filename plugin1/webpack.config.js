@@ -10,8 +10,8 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       name: "plugin1",
+      library: {type:'commonjs'},
       filename: "remoteEntry.js",
-      remotes: {},
       exposes: {
         "./plugin": "./src/index",
       },
