@@ -34,9 +34,8 @@ const contextLoader = require.context(
 //could try top-level awaits
 const start = async () => {
   const [plugin1] = await importAll(contextLoader)
-  plugin1.get('./plugin').then(factory => factory()).then(({sample}) => {
-    sample()
-  })
+  const {sample} = await plugin1.get('./plugin').then(factory => factory())
+  sample()
 }
 
 start()
