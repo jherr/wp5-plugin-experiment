@@ -4,14 +4,17 @@ const path = require("path");
 module.exports = {
   mode: "development",
   target: "node",
-  entry: "./src/index.js",
-  externals: [path.resolve("../plugins")],
+  output: {
+    path: path.resolve(__dirname, "../plugins/plugin1"),
+  },
   plugins: [
     new ModuleFederationPlugin({
-      name: "host",
+      name: "plugin1",
+      library: { type: "commonjs" },
       filename: "remoteEntry.js",
-      remotes: {},
-      exposes: {},
+      exposes: {
+        "./plugin": "./src/index",
+      },
       shared: require("./package.json").dependencies,
     }),
   ],

@@ -7,6 +7,6 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "host", "mf-plugins"
+    "simple/host", "mf-plugins", "server/server"
   ]
 }
