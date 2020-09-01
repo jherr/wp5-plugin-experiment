@@ -11,5 +11,9 @@
     "build": "webpack",
     "watch": "webpack --watch src",
     "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "glob": "^7.1.6",
+    "require-glob": "^3.2.0"
   }
 }
