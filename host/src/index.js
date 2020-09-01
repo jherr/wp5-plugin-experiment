@@ -1,4 +1,4 @@
-const loadPlugins = require("./loadPlugins");
+const loadPlugins = require("mf-plugins");
 
 console.log("Hello");
 

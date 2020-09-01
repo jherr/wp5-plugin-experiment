@@ -1,0 +1,12 @@
+{
+  "name": "plugin-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jherr/wp5-plugin-experiment.git",
+  "author": "Jack Herrington <jherr@pobox.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "host", "mf-plugins"
+  ]
+}

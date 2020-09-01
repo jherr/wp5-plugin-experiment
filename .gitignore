@@ -2,3 +2,4 @@ node_modules
 dist
 host/plugins
 plugins
+mf-plugins/index.js
