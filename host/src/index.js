@@ -11,6 +11,7 @@ const importAll = async (contextLoader) => {
       const container = __non_webpack_require__(path.join('../plugins', cleanID))
       const initContainer = new Promise((resolve) => {
         if (__webpack_share_scopes__.default) {
+          // might not exist, might be async too
           resolve(container.init(__webpack_share_scopes__.default))
         } else {
           resolve()
