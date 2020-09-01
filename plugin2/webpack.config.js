@@ -5,11 +5,11 @@ module.exports = {
   mode: "development",
   target: "node",
   output: {
-    path: path.resolve(__dirname, "../plugins/plugin1"),
+    path: path.resolve(__dirname, "../plugins/plugin2"),
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "plugin1",
+      name: "plugin2",
       library: { type: "commonjs" },
       filename: "remoteEntry.js",
       exposes: {
