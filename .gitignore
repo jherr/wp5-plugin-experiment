@@ -2,5 +2,7 @@
 node_modules
 dist
 host/plugins
+server/plugins
+graphql-server/plugins
 plugins
 mf-plugins/index.js

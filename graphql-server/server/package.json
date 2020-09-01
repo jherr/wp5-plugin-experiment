@@ -1,0 +1,25 @@
+{
+  "name": "simple-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "5.0.0-beta.22",
+    "webpack-cli": "3.3.11"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch src",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "apollo-server": "^2.17.0",
+    "bufferutil": "^4.0.1",
+    "encoding": "^0.1.13",
+    "glob": "^7.1.6",
+    "merge-graphql-schemas": "^1.7.8",
+    "mf-plugins": "1.0.0",
+    "require-glob": "^3.2.0",
+    "utf-8-validate": "^5.0.2"
+  }
+}
